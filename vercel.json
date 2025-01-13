@@ -1,31 +1,44 @@
 {
-    "builds": [
-      {
-        "src": "jun/index.html",
-        "use": "@vercel/static"
-      },
-      {
-        "src": "chartly/index.html",
-        "use": "@vercel/static"
-      },
-      {
-        "src": "template/index.html",
-        "use": "@vercel/static"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/jun/(.*)",
-        "dest": "/jun/index.html"
-      },
-      {
-        "src": "/chartly/(.*)",
-        "dest": "/chartly/index.html"
-      },
-      {
-        "src": "/template/(.*)",
-        "dest": "/template/index.html"
-      }
-    ]
-  }
-  
+  "builds": [
+    {
+      "src": "jun/index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "chartly/index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "template/index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/jun/assets/(.*)",
+      "dest": "/jun/assets/$1"
+    },
+    {
+      "src": "/chartly/assets/(.*)",
+      "dest": "/chartly/assets/$1"
+    },
+    {
+      "src": "/template/assets/(.*)",
+      "dest": "/template/assets/$1"
+    },
+
+    // 其它路由指向 index.html，交给 Vue Router 处理
+    {
+      "src": "/jun/(.*)",
+      "dest": "/jun/index.html"
+    },
+    {
+      "src": "/chartly/(.*)",
+      "dest": "/chartly/index.html"
+    },
+    {
+      "src": "/template/(.*)",
+      "dest": "/template/index.html"
+    }
+  ]
+}
