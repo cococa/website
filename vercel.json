@@ -1,7 +1,5 @@
 {
-  "builds": [
-    
-  ],
+  "builds": [],
   "routes": [
     {
       "src": "/jun/assets/(.*)",
@@ -26,6 +24,30 @@
     {
       "src": "/chartly/(.*)",
       "dest": "/chartly/index.html"
+    },
+    {
+      "src": "/ccwebui/assets/(.*)",
+      "dest": "/ccwebui/assets/$1"
+    },
+    {
+      "src": "/ccwebui/(.*)\\.(?:js|css|map)$",
+      "dest": "/ccwebui/$1"
+    },
+    {
+      "src": "/ccwebui/(.*)",
+      "dest": "/ccwebui/index.html"
+    },
+    {
+      "src": "/template/assets/(.*)",
+      "dest": "/template/assets/$1"
+    },
+    {
+      "src": "/template/(.*)\\.(?:js|css|map)$",
+      "dest": "/template/$1"
+    },
+    {
+      "src": "/template/(.*)",
+      "dest": "/template/index.html"
     }
   ]
 }
