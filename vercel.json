@@ -1,3 +1,31 @@
 {
-
-}
+    "builds": [
+      {
+        "src": "jun/index.html",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "chartly/index.html",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "template/index.html",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/jun/(.*)",
+        "dest": "/jun/index.html"
+      },
+      {
+        "src": "/chartly/(.*)",
+        "dest": "/chartly/index.html"
+      },
+      {
+        "src": "/template/(.*)",
+        "dest": "/template/index.html"
+      }
+    ]
+  }
+  
