@@ -1,9 +1,6 @@
 {
   "builds": [
-    {
-      "src": "ccwebui/index.html",
-      "use": "@vercel/static"
-    },
+    
     {
       "src": "chartly/index.html",
       "use": "@vercel/static"
