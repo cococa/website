@@ -14,18 +14,6 @@
     }
   ],
   "routes": [
-    // {
-    //   "src": "/jun/(.*)",
-    //   "dest": "/jun/assets/$1"
-    // },
-    // {
-    //   "src": "/template/(.*)",
-    //   "dest": "/template/assets/$1"
-    // },
-    // {
-    //   "src": "./chartly/(.*)",
-    //   "dest": "./chartly/assets/$1"
-    // }
     {
       "src": "/jun/(.*)",
       "dest": "/jun/$1"
