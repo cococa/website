@@ -24,8 +24,8 @@
       "dest": "/template/assets/$1"
     },
     {
-      "src": "/chartly/(.*)",
-      "dest": "/chartly/assets/$1"
+      "src": "./chartly/(.*)",
+      "dest": "./chartly/assets/$1"
     }
   ]
 }
