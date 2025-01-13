@@ -34,7 +34,11 @@
       "dest": "/ccwebui/$1"
     },
     {
-      "src": "/ccwebui/(.*)",
+      "src": "/ccwebui/([^/]+)(/.*)?$",
+      "dest": "/ccwebui/$1.html"
+    },
+    {
+      "src": "/ccwebui/?$",
       "dest": "/ccwebui/index.html"
     },
     {
