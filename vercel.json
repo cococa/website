@@ -26,8 +26,6 @@
       "src": "/template/assets/(.*)",
       "dest": "/template/assets/$1"
     },
-
-    // 其它路由指向 index.html，交给 Vue Router 处理
     {
       "src": "/jun/(.*)",
       "dest": "/jun/index.html"
