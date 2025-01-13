@@ -1,17 +1,6 @@
 {
   "builds": [
-    {
-      "src": "jun/index.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "chartly/index.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "template/index.html",
-      "use": "@vercel/static"
-    }
+    
   ],
   "routes": [
     {
