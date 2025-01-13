@@ -1,34 +1,34 @@
 {
-    "builds": [
-      {
-        "src": "ccwebui/index.html",
-        "use": "@vercel/static"
-      },
-      {
-        "src": "chartly/index.html",
-        "use": "@vercel/static"
-      },
-      {
-        "src": "jun/index.html",
-        "use": "@vercel/static"
-      },
-      {
-        "src": "template/index.html",
-        "use": "@vercel/static"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/jun/(.*)",
-        "dest": "/jun/$1"
-      },
-      {
-        "src": "/template/(.*)",
-        "dest": "/template/$1"
-      },
-      {
-        "src": "/chartly/(.*)",
-        "dest": "/chartly/$1"
-      }
-    ]
-  }
+  "builds": [
+    {
+      "src": "ccwebui/index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "chartly/index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "jun/index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "template/index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/jun/(.*)",
+      "dest": "/jun/assets/$1"
+    },
+    {
+      "src": "/template/(.*)",
+      "dest": "/template/assets/$1"
+    },
+    {
+      "src": "/chartly/(.*)",
+      "dest": "/chartly/assets/$1"
+    }
+  ]
+}
