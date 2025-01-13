@@ -19,24 +19,24 @@
       "dest": "/jun/assets/$1"
     },
     {
-      "src": "/chartly/assets/(.*)",
-      "dest": "/chartly/assets/$1"
-    },
-    {
-      "src": "/template/assets/(.*)",
-      "dest": "/template/assets/$1"
+      "src": "/jun/(.*)\\.(?:js|css|map)$",
+      "dest": "/jun/$1"
     },
     {
       "src": "/jun/(.*)",
       "dest": "/jun/index.html"
     },
     {
-      "src": "/chartly/(.*)",
-      "dest": "/chartly/index.html"
+      "src": "/chartly/assets/(.*)",
+      "dest": "/chartly/assets/$1"
     },
     {
-      "src": "/template/(.*)",
-      "dest": "/template/index.html"
+      "src": "/chartly/(.*)\\.(?:js|css|map)$",
+      "dest": "/chartly/$1"
+    },
+    {
+      "src": "/chartly/(.*)",
+      "dest": "/chartly/index.html"
     }
   ]
 }
