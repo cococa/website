@@ -22,6 +22,18 @@
       "dest": "/chartly/$1"
     },
     {
+      "src": "/chartly/100000",
+      "dest": "/chartly/100000"
+    },
+    {
+      "src": "/chartly/themes",
+      "dest": "/chartly/themes"
+    },
+    {
+      "src": "/chartly/area.json",
+      "dest": "/chartly/area.json"
+    },
+    {
       "src": "/chartly/(.*)",
       "dest": "/chartly/index.html"
     },
