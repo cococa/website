@@ -22,7 +22,7 @@
       "dest": "/chartly/$1"
     },
     {
-      "src": "/chartly/themes/(.*)\\.json",
+      "src": "/chartly/public/themes/(.*)\\.json",
       "dest": "/chartly/themes/$1.json"
     },
     {
