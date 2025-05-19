@@ -22,12 +22,16 @@
       "dest": "/chartly/$1"
     },
     {
-      "src": "/chartly/100000",
-      "dest": "/chartly/100000"
+      "src": "/chartly/themes/(.*)\\.json",
+      "dest": "/chartly/themes/$1.json"
     },
     {
-      "src": "/chartly/themes",
-      "dest": "/chartly/themes"
+      "src": "/chartly/100000/(.*)\\.geoJson",
+      "dest": "/chartly/100000/$1.geoJson"
+    },
+    {
+      "src": "/chartly/100000/(.*)/(.*)\\.geoJson",
+      "dest": "/chartly/100000/$1/$2.geoJson"
     },
     {
       "src": "/chartly/area.json",
