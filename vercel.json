@@ -68,6 +68,18 @@
     {
       "src": "/template/(.*)",
       "dest": "/template/index.html"
+    },
+    {
+      "src": "/test/assets/(.*)",
+      "dest": "/test/assets/$1"
+    },
+    {
+      "src": "/test/(.*)\\.(?:js|css|map)$",
+      "dest": "/test/$1"
+    },
+    {
+      "src": "/test/(.*)",
+      "dest": "/test/index.html"
     }
   ]
 }
