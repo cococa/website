@@ -82,8 +82,6 @@
       "dest": "/test/index.html"
     },
     
-
-
     {
       "src": "/assets/(.*)",
       "dest": "/assets/$1"
@@ -95,9 +93,10 @@
     {
       "src": "/(.*)",
       "dest": "/website/index.html"
+    },
+    {
+      "src": "/_nuxt/(.*)",
+      "dest": "/website/_nuxt/$1"
     }
-
-
-
   ]
 }
