@@ -42,6 +42,10 @@
       "dest": "/chartly/index.html"
     },
     {
+      "src": "/chartly/?$",
+      "dest": "/chartly/index.html"
+    },
+    {
       "src": "/ccwebui/assets/(.*)",
       "dest": "/ccwebui/assets/$1"
     },
