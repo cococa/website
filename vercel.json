@@ -97,6 +97,10 @@
     {
       "src": "/_nuxt/(.*)",
       "dest": "/website/_nuxt/$1"
+    },
+     {
+      "src": "/_nuxt/(.*)\\.(?:js|css|map)$",
+      "dest": "/website/_nuxt/$1"
     }
   ]
 }
