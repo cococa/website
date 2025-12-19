@@ -87,10 +87,6 @@
       "dest": "/assets/$1"
     },
     {
-      "src": "/(.*)\\.(?:js|css|map)$",
-      "dest": "/website/$1"
-    },
-    {
       "src": "/_nuxt/(.*)",
       "dest": "/website/_nuxt/$1"
     },
