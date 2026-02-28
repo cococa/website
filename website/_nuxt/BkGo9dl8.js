@@ -1,0 +1,1 @@
+import{P as a,Q as s,u as r,v as o,R as u}from"./CC56Bp0l.js";function i(n){var t;const e=n||s();return((t=e==null?void 0:e.ssrContext)==null?void 0:t.head)||(e==null?void 0:e.runWithContext(()=>{if(r())return o(u)}))}function d(n,e={}){const t=i(e.nuxt);if(t)return a(n,{head:t,...e})}export{d as u};
