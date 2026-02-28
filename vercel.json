@@ -2,24 +2,8 @@
   "builds": [],
   "routes": [
     {
-      "src": "/jun/assets/(.*)",
-      "dest": "/jun/assets/$1"
-    },
-    {
-      "src": "/jun/(.*)\\.(?:js|css|map)$",
-      "dest": "/jun/$1"
-    },
-    {
-      "src": "/jun/(.*)",
-      "dest": "/jun/index.html"
-    },
-    {
       "src": "/chartly/assets/(.*)",
       "dest": "/chartly/assets/$1"
-    },
-    {
-      "src": "/chartly/(.*)\\.(?:js|css|map)$",
-      "dest": "/chartly/$1"
     },
     {
       "src": "/chartly/public/themes/(.*)\\.json",
@@ -38,61 +22,32 @@
       "dest": "/chartly/area.json"
     },
     {
-      "src": "/chartly/(.*)",
-      "dest": "/chartly/index.html"
+      "src": "/chartly/favicon.ico",
+      "dest": "/chartly/favicon.ico"
+    },
+    {
+      "src": "/chartly/(.*)\\.(?:js|css|map|png|jpg|jpeg|svg|webp|gif|json|ico|woff2?|ttf)$",
+      "dest": "/chartly/$1"
     },
     {
       "src": "/chartly/?$",
       "dest": "/chartly/index.html"
     },
     {
-      "src": "/ccwebui/assets/(.*)",
-      "dest": "/ccwebui/assets/$1"
+      "src": "/chartly/(.*)",
+      "dest": "/chartly/index.html"
     },
-    {
-      "src": "/ccwebui/(.*)\\.(?:js|css|map)$",
-      "dest": "/ccwebui/$1"
-    },
-    {
-      "src": "/ccwebui/([^/]+)(/.*)?$",
-      "dest": "/ccwebui/$1.html"
-    },
-    {
-      "src": "/ccwebui/?$",
-      "dest": "/ccwebui/index.html"
-    },
-    {
-      "src": "/template/assets/(.*)",
-      "dest": "/template/assets/$1"
-    },
-    {
-      "src": "/template/(.*)\\.(?:js|css|map)$",
-      "dest": "/template/$1"
-    },
-    {
-      "src": "/template/(.*)",
-      "dest": "/template/index.html"
-    },
-    {
-      "src": "/test/assets/(.*)",
-      "dest": "/test/assets/$1"
-    },
-    {
-      "src": "/test/(.*)\\.(?:js|css|map)$",
-      "dest": "/test/$1"
-    },
-    {
-      "src": "/test/(.*)",
-      "dest": "/test/index.html"
-    },
-    
     {
       "src": "/_nuxt/(.*)",
       "dest": "/website/_nuxt/$1"
     },
-     {
-      "src": "/_nuxt/(.*)\\.(?:js|css|map)$",
-      "dest": "/website/_nuxt/$1"
+    {
+      "src": "/(.*)\\.(?:js|css|map|png|jpg|jpeg|svg|webp|gif|json|ico|woff2?|ttf)$",
+      "dest": "/website/$1"
+    },
+    {
+      "src": "/?$",
+      "dest": "/website/index.html"
     },
     {
       "src": "/(.*)",
